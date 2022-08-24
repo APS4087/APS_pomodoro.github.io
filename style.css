@@ -11,12 +11,16 @@ body{
     background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #title {
-    background-color: rgb(42, 120, 165);
+    text-shadow: 5px 5px 10px white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
 a{
-    color: greenyellow;
+    color: rgba(255, 0, 0, 0.856);
+}
+a:hover{
+    color: green;
 }
 
 ol{
@@ -31,4 +35,35 @@ ul{
     border-width: 3px;
     border-color: black;
     border-radius: 5px;
+}
+
+.fa-regular fa-cloud-music{
+    color: black;
+
+}
+
+#box1{
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    font-size: 500%;
+    text-align: center;
+
+    /*animation: mybox;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-timing-function: ease;*/
+
+    animation: 5s linear 0s infinite running myboxSize;
+
+}
+
+@keyframes mybox{
+    from{margin-left: 0%;}
+    to{margin-left: 100%;}
+}
+@keyframes myboxSize{
+    50%{transform: scale(0.5,0.5);}
 }
